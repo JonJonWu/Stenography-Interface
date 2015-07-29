@@ -1,0 +1,59 @@
+<template name="Stenography">
+    <!-- // <script src="docs/js/jquery.min.js"></script>
+    // <script src="docs/js/jquery-ui.min.js"></script>
+    // <script src="docs/js/jquery-migrate-1.2.1.min.js"></script>
+    // <link href="docs/css/jquery-ui.min.css" rel="stylesheet">
+    // <link href="css/keyboard.css" rel="stylesheet">
+    // <script src="js/jquery.keyboard.js"></script> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="span18">
+                <div class="Header">
+                    {{ > Menu}}
+                </div>
+                <div class="span8">
+                    {{ > QwertyBox}}
+                </div>
+                <div class="span16">
+                    {{ > StenoBox}}
+                </div>
+                <div class="Keyboard">
+                    {{ > VirtualKeyboard}}
+                </div>
+            </div> 
+        </div>
+    </div>
+</template>
+<template name="Menu">
+    <div class="menueBar">
+        <ul class="nav nav-pills nav-justified">
+            <li role="presentation" class="enabled"><a href="http://localhost:3000/">Home</a></li>
+            <li role="presentation" class="enabled"> <a href="http://localhost:3000/References">References</a></li>
+            <li role="presentation" class="enabled"> <a href="http://localhost:3000/Examples">Examples</a></li>
+            <li role="presentation" class="enabled"> <a href="http://localhost:3000/Credits">Credits</a></li>
+        </ul>
+    </div>
+</template>
+<template name="QwertyBox">
+    <div class="QwertyEntryField">
+        <div class="QWERTY">
+            <label for="ex2">QWERTY</label>
+            <input class="input" id="qEntry" type="text" placeholder=" Enter something...">
+        </div>
+    </div>
+</template>
+<template name="StenoBox">
+    <div class="STENO">
+        <label for="ex2">STENO</label>
+        <input class="input" id="sEntry" type="text">
+    </div>
+</template>
+<template name="VirtualKeyboard">
+    
+
+    <div class="row">
+        <div class="span18">
+            <div class="OnScreenKeyboard">Keyboard Here</div>
+        </div>
+    </div>
+</template>

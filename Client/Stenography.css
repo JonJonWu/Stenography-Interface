@@ -1,0 +1,25 @@
+/* CSS declarations go here */
+
+
+input[type="text"] {
+  width: 500px;
+  min-height: 80px;
+    font-size:36px;
+}
+
+.OnScreenKeyboard{
+  background-color: #FFFFFA;
+  width: 2000px;
+  height: 400px;
+  margin: 200px;
+}
+
+.Header {
+  font-size: 72px;
+  margin: 60px;
+}
+
+
+
+
+
