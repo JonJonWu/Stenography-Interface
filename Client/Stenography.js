@@ -20,6 +20,22 @@
 	});
 }
 
+ if (Meteor.isClient) {
+    Template.StenoBox.events({
+        'keypress #sEntry': function (evt, ui) {    
+            if(event.keyCode == 13) {
+                var stenoInput = evt.currentTarget.value;
+                var word = Dictionary.findOne({steno:stenoInput});
+                if(word != undefined){
+                    $("#qEntry").val(word.qwerty);   
+                }else{
+                    alert("Invalid Entry, Try again");
+                } 
+            }
+         }
+    });
+}
+
 // if (Meteor.isClient) {
 //     Template.StenoBox.helpers({
 //         var characters = ["word.steno".split("")];
